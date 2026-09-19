@@ -152,14 +152,30 @@ img{
 
     letter-spacing:.14em;
 }
+ .social-links{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-right:10px;
+}
 
+ .social-link{
+    font-size:9px;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    transition:.25s;
+}
 
-.header-link:hover{
+ .social-link:hover{
+    opacity:.5;
+}
+
+ .header-link:hover{
     text-decoration:underline;
 }
 
 
-.cart-button{
+ .cart-button{
     border:0;
 
     background:none;
@@ -174,7 +190,7 @@ img{
 }
 
 
-.cart-count{
+ .cart-count{
     display:inline-flex;
 
     align-items:center;
@@ -2317,33 +2333,64 @@ img{
 
     <div class="header-right">
 
+    <div class="social-links">
+
         <a
-        class="header-link"
-        href="#catalog">
-            Каталог
+        class="social-link"
+        href="https://max.ru/rudershop"
+        target="_blank"
+        rel="noopener">
+            MAX
         </a>
 
         <a
-        class="header-link"
-        href="#custom">
-            Пошив
+        class="social-link"
+        href="https://t.me/rudershop"
+        target="_blank"
+        rel="noopener">
+            TG
         </a>
 
-        <button
-        class="cart-button"
-        id="openCart">
-
-            Корзина
-
-            <span
-            class="cart-count"
-            id="cartCount">
-                0
-            </span>
-
-        </button>
+        <a
+        class="social-link"
+        href="https://vk.com/rudershop"
+        target="_blank"
+        rel="noopener">
+            VK
+        </a>
 
     </div>
+
+
+    <a
+    class="header-link"
+    href="#catalog">
+        Каталог
+    </a>
+
+
+    <a
+    class="header-link"
+    href="#custom">
+        Пошив
+    </a>
+
+
+    <button
+    class="cart-button"
+    id="openCart">
+
+        Корзина
+
+        <span
+        class="cart-count"
+        id="cartCount">
+            0
+        </span>
+
+    </button>
+
+</div>
 
 </div>
 
@@ -2479,75 +2526,6 @@ img{
 
 
 
-<!-- ============================================================
-     FEATURES
-     ============================================================ -->
-
-<section class="features">
-
-<div class="container feature-grid">
-
-
-    <div class="feature">
-
-        <div class="feature-number">
-            01
-        </div>
-
-        <h3>
-            Wow-effect
-        </h3>
-
-        <p>
-            Фирменная эстетика RUDER,
-            акцент на фигуре и модели,
-            которые заметны.
-        </p>
-
-    </div>
-
-
-    <div class="feature">
-
-        <div class="feature-number">
-            02
-        </div>
-
-        <h3>
-            По твоим меркам
-        </h3>
-
-        <p>
-            Перед пошивом менеджер
-            связывается с клиенткой,
-            уточняет параметры и детали.
-        </p>
-
-    </div>
-
-
-    <div class="feature">
-
-        <div class="feature-number">
-            03
-        </div>
-
-        <h3>
-            Твоя версия
-        </h3>
-
-        <p>
-            Цвет, ткань, кант, чашки,
-            варианты плавок и дополнительные
-            опции обсуждаются при заказе.
-        </p>
-
-    </div>
-
-
-</div>
-
-</section>
 
 
 
