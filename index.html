@@ -1,0 +1,4498 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RUDER — купальники, бельё, комбезы и индивидуальный пошив</title>
+
+<meta name="description"
+content="RUDER — купальники с wow-эффектом, бельё, комбинезоны и туники. Индивидуальный пошив, подбор модели и посадки под фигуру. Доставка по всему миру.">
+
+<style>
+
+/* ============================================================
+   RUDER 2026
+   Fashion / editorial / e-commerce
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap');
+
+
+:root{
+    --cream:#f3efe8;
+    --paper:#faf8f4;
+    --black:#101010;
+    --white:#fff;
+    --gray:#77736d;
+    --light-gray:#d9d4cb;
+    --red:#a72e2e;
+    --green:#394a40;
+    --pink:#d7a8aa;
+}
+
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+    background:var(--cream);
+    color:var(--black);
+
+    font-family:"DM Sans",Arial,sans-serif;
+
+    overflow-x:hidden;
+}
+
+
+body.locked{
+    overflow:hidden;
+}
+
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+
+button{
+    font:inherit;
+}
+
+
+img{
+    display:block;
+    width:100%;
+}
+
+
+.container{
+    width:min(1440px,92%);
+    margin:auto;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.header{
+    position:fixed;
+
+    top:0;
+    left:0;
+    right:0;
+
+    height:72px;
+
+    z-index:1000;
+
+    background:rgba(243,239,232,.9);
+
+    backdrop-filter:blur(16px);
+
+    border-bottom:1px solid rgba(16,16,16,.12);
+}
+
+
+.header-inner{
+    height:100%;
+
+    display:grid;
+
+    grid-template-columns:1fr auto 1fr;
+
+    align-items:center;
+}
+
+
+.logo{
+    font-size:20px;
+
+    font-weight:700;
+
+    letter-spacing:.42em;
+}
+
+
+.header-center{
+    font-size:10px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.18em;
+
+    color:#666;
+}
+
+
+.header-right{
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:25px;
+
+    font-size:10px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.14em;
+}
+
+
+.header-link:hover{
+    text-decoration:underline;
+}
+
+
+.cart-button{
+    border:0;
+
+    background:none;
+
+    cursor:pointer;
+
+    text-transform:uppercase;
+
+    font-size:10px;
+
+    letter-spacing:.14em;
+}
+
+
+.cart-count{
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:20px;
+    height:20px;
+
+    margin-left:5px;
+
+    border:1px solid var(--black);
+
+    border-radius:50%;
+
+    font-size:9px;
+}
+
+
+/* ============================================================
+   TOP MESSAGE
+   ============================================================ */
+
+.top-message{
+    position:fixed;
+
+    top:72px;
+
+    left:0;
+    right:0;
+
+    z-index:900;
+
+    background:var(--black);
+
+    color:white;
+
+    padding:10px;
+
+    text-align:center;
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.18em;
+}
+
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.hero{
+    padding-top:72px;
+
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:43% 57%;
+}
+
+
+.hero-copy{
+    padding:100px 7vw 65px 0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    border-right:1px solid var(--light-gray);
+}
+
+
+.eyebrow{
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.23em;
+
+    color:var(--gray);
+}
+
+
+.hero-title{
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(70px,9.5vw,150px);
+
+    font-weight:400;
+
+    line-height:.78;
+
+    letter-spacing:-.065em;
+
+    margin-top:70px;
+}
+
+
+.hero-title span{
+    display:block;
+
+    padding-left:17%;
+}
+
+
+.hero-title em{
+    color:#888078;
+}
+
+
+.hero-bottom{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+    align-items:end;
+}
+
+
+.hero-description{
+    max-width:270px;
+
+    color:var(--gray);
+
+    font-size:12px;
+
+    line-height:1.8;
+}
+
+
+.hero-link{
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.18em;
+}
+
+
+.circle-arrow{
+    width:43px;
+    height:43px;
+
+    border:1px solid var(--black);
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.3s;
+}
+
+
+.hero-link:hover .circle-arrow{
+    background:var(--black);
+
+    color:white;
+}
+
+
+.hero-photo{
+    min-height:calc(100vh - 72px);
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+
+.hero-photo img{
+    height:100%;
+
+    object-fit:cover;
+
+    filter:saturate(.72);
+
+    transition:transform 1.3s cubic-bezier(.2,.7,.2,1);
+}
+
+
+.hero-photo:hover img{
+    transform:scale(1.035);
+}
+
+
+.hero-side-label{
+    position:absolute;
+
+    right:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    writing-mode:vertical-rl;
+
+    color:white;
+
+    font-size:9px;
+
+    letter-spacing:.25em;
+
+    text-transform:uppercase;
+}
+
+
+/* ============================================================
+   TICKER
+   ============================================================ */
+
+.ticker{
+    overflow:hidden;
+
+    background:var(--black);
+
+    color:white;
+
+    border-top:1px solid var(--black);
+
+    border-bottom:1px solid var(--black);
+
+    white-space:nowrap;
+}
+
+
+.ticker-track{
+    display:inline-block;
+
+    padding:16px 0;
+
+    animation:ticker 25s linear infinite;
+
+    font-size:10px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.22em;
+}
+
+
+@keyframes ticker{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
+
+
+/* ============================================================
+   BRAND STATEMENT
+   ============================================================ */
+
+.statement{
+    padding:170px 0 190px;
+}
+
+
+.statement-grid{
+    display:grid;
+
+    grid-template-columns:24% 76%;
+}
+
+
+.statement-label{
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.2em;
+}
+
+
+.statement-text{
+    max-width:1050px;
+
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(40px,5.2vw,82px);
+
+    line-height:1.04;
+
+    letter-spacing:-.04em;
+}
+
+
+.statement-text i{
+    color:#8b8176;
+}
+
+
+/* ============================================================
+   REAL RUDER FEATURES
+   ============================================================ */
+
+.features{
+    padding-bottom:180px;
+}
+
+
+.feature-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    border-top:1px solid var(--light-gray);
+
+    border-bottom:1px solid var(--light-gray);
+}
+
+
+.feature{
+    padding:35px 30px 45px 0;
+
+    min-height:250px;
+
+    border-right:1px solid var(--light-gray);
+}
+
+
+.feature:not(:first-child){
+    padding-left:30px;
+}
+
+
+.feature-number{
+    color:var(--gray);
+
+    font-size:9px;
+
+    margin-bottom:75px;
+}
+
+
+.feature h3{
+    font-family:"Playfair Display",serif;
+
+    font-size:31px;
+
+    font-weight:400;
+
+    margin-bottom:15px;
+}
+
+
+.feature p{
+    color:var(--gray);
+
+    font-size:12px;
+
+    line-height:1.75;
+
+    max-width:280px;
+}
+
+
+/* ============================================================
+   CATALOG HEADER
+   ============================================================ */
+
+.catalog{
+    padding-bottom:170px;
+}
+
+
+.catalog-head{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:end;
+
+    padding-bottom:20px;
+
+    border-bottom:1px solid var(--light-gray);
+
+    margin-bottom:55px;
+}
+
+
+.catalog-title{
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(60px,7vw,110px);
+
+    line-height:.8;
+
+    font-weight:400;
+
+    letter-spacing:-.055em;
+}
+
+
+.catalog-meta{
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.18em;
+
+    color:var(--gray);
+}
+
+
+/* ============================================================
+   FILTERS
+   ============================================================ */
+
+.filters{
+    display:flex;
+
+    gap:8px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:55px;
+}
+
+
+.filter{
+    border:1px solid var(--light-gray);
+
+    background:transparent;
+
+    padding:11px 17px;
+
+    cursor:pointer;
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.14em;
+
+    transition:.25s;
+}
+
+
+.filter:hover,
+.filter.active{
+    background:var(--black);
+
+    color:white;
+
+    border-color:var(--black);
+}
+
+
+/* ============================================================
+   PRODUCTS
+   ============================================================ */
+
+/* ============================================================
+   PRODUCTS — COMPACT GRID
+   ============================================================ */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:45px 18px;
+}
+
+.product{
+    cursor:pointer;
+
+    opacity:0;
+    transform:translateY(20px);
+
+    transition:
+        opacity .6s ease,
+        transform .6s ease;
+}
+
+.product.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+/* Убираем большие журнальные смещения */
+
+.product:nth-child(1),
+.product:nth-child(2),
+.product:nth-child(3),
+.product:nth-child(4),
+.product:nth-child(5),
+.product:nth-child(6),
+.product:nth-child(7),
+.product:nth-child(8),
+.product:nth-child(9),
+.product:nth-child(10),
+.product:nth-child(11),
+.product:nth-child(12){
+    grid-column:auto;
+    margin-top:0;
+}
+
+
+/* Изображение карточки */
+
+.product-image{
+    position:relative;
+    overflow:hidden;
+    background:#ddd;
+    aspect-ratio: .82;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:
+        transform .7s cubic-bezier(.2,.7,.2,1);
+}
+
+.product:hover .product-image img{
+    transform:scale(1.035);
+}
+
+
+/* Номер */
+
+.product-index{
+    position:absolute;
+
+    left:10px;
+    top:10px;
+
+    width:28px;
+    height:28px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.75);
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:8px;
+
+    backdrop-filter:blur(6px);
+}
+
+
+/* Бейдж */
+
+.product-badge{
+    position:absolute;
+
+    right:10px;
+    top:10px;
+
+    background:white;
+    color:black;
+
+    padding:6px 8px;
+
+    font-size:7px;
+
+    text-transform:uppercase;
+    letter-spacing:.1em;
+}
+
+
+/* Информация */
+
+.product-info{
+    display:grid;
+    grid-template-columns:1fr auto;
+
+    gap:10px;
+
+    padding:10px 0;
+
+    border-bottom:1px solid var(--light-gray);
+}
+
+.product-name{
+    font-family:"Playfair Display",serif;
+    font-size:17px;
+    line-height:1.05;
+}
+
+.product-description{
+    color:var(--gray);
+
+    font-size:7px;
+
+    text-transform:uppercase;
+    letter-spacing:.08em;
+
+    margin-top:4px;
+}
+
+.product-price{
+    text-align:right;
+    font-size:10px;
+}
+
+.old-price{
+    display:block;
+
+    color:#999;
+
+    text-decoration:line-through;
+
+    font-size:8px;
+
+    margin-bottom:2px;
+}
+
+.product:nth-child(odd) .product-image{
+    aspect-ratio:.78;
+}
+
+
+.product:nth-child(even) .product-image{
+    aspect-ratio:.95;
+}
+
+
+.product-index{
+    position:absolute;
+
+    left:15px;
+    top:15px;
+
+    width:35px;
+    height:35px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.75);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:9px;
+
+    backdrop-filter:blur(6px);
+}
+
+
+.product-badge{
+    position:absolute;
+
+    right:15px;
+    top:15px;
+
+    background:white;
+
+    color:black;
+
+    padding:8px 10px;
+
+    font-size:8px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.13em;
+}
+
+
+.product-info{
+    display:grid;
+
+    grid-template-columns:1fr auto;
+
+    gap:20px;
+
+    padding:14px 0;
+
+    border-bottom:1px solid var(--light-gray);
+}
+
+
+.product-name{
+    font-family:"Playfair Display",serif;
+
+    font-size:24px;
+}
+
+
+.product-description{
+    color:var(--gray);
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.1em;
+
+    margin-top:5px;
+}
+
+
+.product-price{
+    text-align:right;
+
+    font-size:12px;
+}
+
+
+.old-price{
+    display:block;
+
+    color:#999;
+
+    text-decoration:line-through;
+
+    font-size:10px;
+
+    margin-bottom:3px;
+}
+
+
+/* ============================================================
+   TRANSFORMATION
+   ============================================================ */
+
+.transformation{
+    padding:170px 0;
+
+    background:var(--black);
+
+    color:white;
+}
+
+
+.transformation-grid{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:100px;
+
+    align-items:center;
+}
+
+
+.transformation-photo{
+    height:700px;
+
+    overflow:hidden;
+}
+
+
+.transformation-photo img{
+    height:100%;
+
+    object-fit:cover;
+
+    filter:saturate(.7);
+}
+
+
+.transformation-copy .eyebrow{
+    color:#888;
+}
+
+
+.transformation-copy h2{
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(55px,7vw,105px);
+
+    line-height:.85;
+
+    font-weight:400;
+
+    letter-spacing:-.055em;
+
+    margin-top:40px;
+}
+
+
+.transformation-copy p{
+    max-width:440px;
+
+    margin-top:40px;
+
+    color:#999;
+
+    font-size:13px;
+
+    line-height:1.85;
+}
+
+
+.transformation-list{
+    margin-top:40px;
+
+    border-top:1px solid #303030;
+}
+
+
+.transformation-item{
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding:16px 0;
+
+    border-bottom:1px solid #303030;
+
+    font-size:11px;
+}
+
+
+.transformation-item span:last-child{
+    color:#777;
+}
+
+
+/* ============================================================
+   CUSTOM ORDER
+   ============================================================ */
+
+.custom{
+    padding:180px 0;
+}
+
+
+.custom-head{
+    display:grid;
+
+    grid-template-columns:30% 70%;
+}
+
+
+.custom-title{
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(60px,8vw,120px);
+
+    font-weight:400;
+
+    line-height:.8;
+
+    letter-spacing:-.06em;
+}
+
+
+.custom-copy{
+    max-width:720px;
+}
+
+
+.custom-copy p{
+    font-size:19px;
+
+    line-height:1.55;
+
+    max-width:700px;
+}
+
+
+.custom-copy small{
+    display:block;
+
+    margin-top:25px;
+
+    color:var(--gray);
+
+    font-size:11px;
+
+    line-height:1.8;
+
+    max-width:570px;
+}
+
+
+.custom-button{
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-top:40px;
+
+    padding:18px 24px;
+
+    background:var(--black);
+
+    color:white;
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.17em;
+
+    transition:.3s;
+}
+
+
+.custom-button:hover{
+    background:#333;
+}
+
+
+.custom-image{
+    height:700px;
+
+    margin-top:100px;
+
+    overflow:hidden;
+}
+
+
+.custom-image img{
+    height:100%;
+
+    object-fit:cover;
+
+    filter:saturate(.65);
+}
+
+
+/* ============================================================
+   MATERIALS
+   ============================================================ */
+
+.materials{
+    padding-bottom:180px;
+}
+
+
+.material-head{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:end;
+
+    margin-bottom:50px;
+}
+
+
+.material-title{
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(55px,7vw,100px);
+
+    font-weight:400;
+
+    line-height:.85;
+
+    letter-spacing:-.055em;
+}
+
+
+.material-grid{
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:12px;
+}
+
+
+.material{
+    position:relative;
+
+    height:430px;
+
+    overflow:hidden;
+}
+
+
+.material img{
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .8s;
+}
+
+
+.material:hover img{
+    transform:scale(1.05);
+}
+
+
+.material-overlay{
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:22px;
+
+    color:white;
+
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.65)
+    );
+}
+
+
+.material-name{
+    font-family:"Playfair Display",serif;
+
+    font-size:28px;
+}
+
+
+.material-text{
+    margin-top:5px;
+
+    font-size:8px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.15em;
+}
+
+
+/* ============================================================
+   SOCIAL PROOF
+   ============================================================ */
+
+.social{
+    background:#e6dfd5;
+
+    padding:170px 0;
+}
+
+
+.social-head{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:end;
+
+    margin-bottom:60px;
+}
+
+
+.social-title{
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(55px,7vw,105px);
+
+    font-weight:400;
+
+    line-height:.8;
+
+    letter-spacing:-.055em;
+}
+
+
+.social-sub{
+    max-width:300px;
+
+    color:#6f6a64;
+
+    font-size:11px;
+
+    line-height:1.7;
+}
+
+
+.review-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:12px;
+}
+
+
+.review{
+    background:var(--paper);
+
+    padding:35px;
+
+    min-height:340px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+}
+
+
+.review-top{
+    font-size:10px;
+
+    color:#999;
+
+    letter-spacing:.18em;
+}
+
+
+.review-text{
+    font-family:"Playfair Display",serif;
+
+    font-size:27px;
+
+    line-height:1.25;
+}
+
+
+.review-bottom{
+    color:#888;
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+}
+
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+
+.faq{
+    padding:170px 0;
+}
+
+
+.faq-grid{
+    display:grid;
+
+    grid-template-columns:32% 68%;
+}
+
+
+.faq-title{
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(55px,7vw,100px);
+
+    line-height:.82;
+
+    font-weight:400;
+
+    letter-spacing:-.055em;
+}
+
+
+.faq-list{
+    border-top:1px solid var(--light-gray);
+}
+
+
+.faq-item{
+    border-bottom:1px solid var(--light-gray);
+}
+
+
+.faq-question{
+    width:100%;
+
+    border:0;
+
+    background:none;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    text-align:left;
+
+    padding:25px 0;
+
+    font-size:13px;
+}
+
+
+.faq-plus{
+    font-size:20px;
+
+    font-weight:300;
+}
+
+
+.faq-answer{
+    display:none;
+
+    max-width:650px;
+
+    padding:0 50px 30px 0;
+
+    color:var(--gray);
+
+    font-size:12px;
+
+    line-height:1.85;
+}
+
+
+.faq-item.open .faq-answer{
+    display:block;
+}
+
+
+/* ============================================================
+   CTA
+   ============================================================ */
+
+.cta{
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.25),
+            rgba(0,0,0,.4)
+        ),
+        url("https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=2200&q=90")
+        center/cover fixed;
+}
+
+
+.cta h2{
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(75px,11vw,165px);
+
+    line-height:.78;
+
+    font-weight:400;
+
+    letter-spacing:-.07em;
+}
+
+
+.cta-bottom{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:end;
+
+    margin-top:70px;
+}
+
+
+.cta-text{
+    max-width:370px;
+
+    font-size:12px;
+
+    line-height:1.8;
+}
+
+
+.cta-button{
+    background:white;
+
+    color:black;
+
+    padding:18px 25px;
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.16em;
+
+    transition:.3s;
+}
+
+
+.cta-button:hover{
+    background:black;
+
+    color:white;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.footer{
+    background:var(--black);
+
+    color:white;
+
+    padding:65px 0 30px;
+}
+
+
+.footer-grid{
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:40px;
+}
+
+
+.footer-logo{
+    font-size:30px;
+
+    font-weight:700;
+
+    letter-spacing:.4em;
+}
+
+
+.footer-column{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    color:#999;
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.13em;
+}
+
+
+.footer-column strong{
+    color:white;
+
+    font-weight:400;
+
+    margin-bottom:10px;
+}
+
+
+.footer-column a:hover{
+    color:white;
+}
+
+
+.footer-bottom{
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:100px;
+
+    padding-top:20px;
+
+    border-top:1px solid #2b2b2b;
+
+    color:#666;
+
+    font-size:8px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.13em;
+}
+
+
+/* ============================================================
+   CART DRAWER
+   ============================================================ */
+
+.drawer-overlay{
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.4);
+
+    z-index:1999;
+
+    display:none;
+}
+
+
+.drawer-overlay.open{
+    display:block;
+}
+
+
+.cart-drawer{
+    position:fixed;
+
+    right:0;
+    top:0;
+    bottom:0;
+
+    width:min(480px,92vw);
+
+    background:var(--paper);
+
+    z-index:2000;
+
+    transform:translateX(100%);
+
+    transition:transform .4s cubic-bezier(.2,.7,.2,1);
+
+    padding:30px;
+
+    overflow:auto;
+}
+
+
+.cart-drawer.open{
+    transform:translateX(0);
+}
+
+
+.drawer-head{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:1px solid var(--light-gray);
+
+    padding-bottom:20px;
+}
+
+
+.drawer-title{
+    font-family:"Playfair Display",serif;
+
+    font-size:35px;
+
+    font-weight:400;
+}
+
+
+.close{
+    background:none;
+
+    border:0;
+
+    cursor:pointer;
+
+    font-size:24px;
+}
+
+
+.cart-items{
+    padding:25px 0;
+}
+
+
+.cart-empty{
+    color:var(--gray);
+
+    font-size:12px;
+
+    line-height:1.7;
+}
+
+
+.cart-item{
+    display:grid;
+
+    grid-template-columns:90px 1fr auto;
+
+    gap:15px;
+
+    padding:15px 0;
+
+    border-bottom:1px solid var(--light-gray);
+}
+
+
+.cart-item img{
+    width:90px;
+
+    height:110px;
+
+    object-fit:cover;
+}
+
+
+.cart-item-name{
+    font-family:"Playfair Display",serif;
+
+    font-size:19px;
+}
+
+
+.cart-item-price{
+    font-size:11px;
+
+    margin-top:7px;
+}
+
+
+.remove-item{
+    border:0;
+
+    background:none;
+
+    cursor:pointer;
+
+    color:#999;
+
+    font-size:18px;
+}
+
+
+.drawer-bottom{
+    border-top:1px solid var(--light-gray);
+
+    padding-top:20px;
+}
+
+
+.total{
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:20px;
+
+    font-size:13px;
+}
+
+
+.checkout{
+    display:block;
+
+    width:100%;
+
+    padding:18px;
+
+    text-align:center;
+
+    background:var(--black);
+
+    color:white;
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.16em;
+}
+
+
+/* ============================================================
+   PRODUCT MODAL
+   ============================================================ */
+
+.modal-overlay{
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(8px);
+
+    z-index:3000;
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:25px;
+}
+
+
+.modal-overlay.open{
+    display:flex;
+}
+
+
+.product-modal{
+    width:min(1050px,100%);
+
+    max-height:90vh;
+
+    overflow:auto;
+
+    background:var(--paper);
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+}
+
+
+.modal-image{
+    min-height:700px;
+
+    background-size:cover;
+
+    background-position:center;
+}
+
+
+.modal-content{
+    padding:50px;
+
+    position:relative;
+}
+
+
+.modal-close{
+    position:absolute;
+
+    top:20px;
+    right:25px;
+
+    background:none;
+
+    border:0;
+
+    cursor:pointer;
+
+    font-size:25px;
+}
+
+
+.modal-category{
+    margin-top:70px;
+
+    font-size:9px;
+
+    color:var(--gray);
+
+    text-transform:uppercase;
+
+    letter-spacing:.2em;
+}
+
+
+.modal-content h2{
+    font-family:"Playfair Display",serif;
+
+    font-size:58px;
+
+    font-weight:400;
+
+    line-height:.9;
+
+    margin-top:20px;
+}
+
+
+.modal-price{
+    margin-top:25px;
+
+    font-size:15px;
+}
+
+
+.modal-old-price{
+    color:#999;
+
+    text-decoration:line-through;
+
+    margin-right:10px;
+
+    font-size:11px;
+}
+
+
+.modal-text{
+    margin-top:40px;
+
+    color:var(--gray);
+
+    font-size:12px;
+
+    line-height:1.9;
+}
+
+
+.modal-options{
+    margin-top:35px;
+
+    padding-top:25px;
+
+    border-top:1px solid var(--light-gray);
+}
+
+
+.option-title{
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.15em;
+
+    margin-bottom:10px;
+}
+
+
+.color-list{
+    display:flex;
+
+    gap:8px;
+
+    flex-wrap:wrap;
+}
+
+
+.color{
+    width:25px;
+    height:25px;
+
+    border-radius:50%;
+
+    border:1px solid #aaa;
+
+    cursor:pointer;
+}
+
+
+.color.black{
+    background:#111;
+}
+
+
+.color.nude{
+    background:#c6a58e;
+}
+
+
+.color.white{
+    background:#f8f7f3;
+}
+
+
+.color.red{
+    background:#8c2727;
+}
+
+
+.color.pink{
+    background:#d49b9d;
+}
+
+
+.modal-add{
+    display:block;
+
+    width:100%;
+
+    border:0;
+
+    cursor:pointer;
+
+    margin-top:35px;
+
+    padding:18px;
+
+    background:var(--black);
+
+    color:white;
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.17em;
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media(max-width:900px){
+
+    .header-center{
+        display:none;
+    }
+
+
+    .header-inner{
+        grid-template-columns:1fr auto;
+    }
+
+
+    .hero{
+        grid-template-columns:1fr;
+
+        padding-top:72px;
+    }
+
+
+    .hero-copy{
+        min-height:75vh;
+
+        border-right:0;
+
+        padding-right:0;
+    }
+
+
+    .hero-photo{
+        height:75vh;
+
+        min-height:0;
+    }
+
+
+    .hero-title{
+        font-size:75px;
+    }
+
+
+    .statement-grid,
+    .custom-head,
+    .faq-grid{
+        grid-template-columns:1fr;
+    }
+
+
+    .statement-label{
+        margin-bottom:40px;
+    }
+
+
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
+
+    .feature{
+        border-right:0;
+
+        border-bottom:1px solid var(--light-gray);
+
+        padding:30px 0;
+    }
+
+
+    .feature:not(:first-child){
+        padding-left:0;
+    }
+
+
+    .product:nth-child(n){
+        grid-column:auto;
+
+        margin-top:60px;
+    }
+
+
+    .transformation-grid{
+        grid-template-columns:1fr;
+    }
+
+
+    .transformation-photo{
+        height:600px;
+    }
+
+
+    .custom-copy{
+        margin-top:60px;
+    }
+
+
+    .material-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+
+    .review-grid{
+        grid-template-columns:1fr;
+    }
+
+
+    .faq-title{
+        margin-bottom:60px;
+    }
+
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+
+    .product-modal{
+        grid-template-columns:1fr;
+    }
+
+
+    .modal-image{
+        min-height:450px;
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .container{
+        width:90%;
+    }
+
+
+    .header{
+        height:64px;
+    }
+
+
+    .top-message{
+        top:64px;
+
+        font-size:7px;
+    }
+
+
+    .hero{
+        padding-top:64px;
+    }
+
+
+    .hero-copy{
+        min-height:78vh;
+
+        padding-top:45px;
+    }
+
+
+    .hero-title{
+        font-size:63px;
+    }
+
+
+    .hero-bottom{
+        grid-template-columns:1fr;
+    }
+
+
+    .hero-photo{
+        height:65vh;
+    }
+
+
+    .statement{
+        padding:110px 0;
+    }
+
+
+    .statement-text{
+        font-size:42px;
+    }
+
+
+    .catalog-title{
+        font-size:58px;
+    }
+
+
+    .catalog-head{
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+    }
+
+
+    .product-info{
+        grid-template-columns:1fr;
+    }
+
+
+    .product-price{
+        text-align:left;
+    }
+
+
+    .transformation{
+        padding:110px 0;
+    }
+
+
+    .transformation-photo{
+        height:500px;
+    }
+
+
+    .custom{
+        padding:110px 0;
+    }
+
+
+    .custom-title{
+        font-size:65px;
+    }
+
+
+    .custom-image{
+        height:500px;
+    }
+
+
+    .material-grid{
+        grid-template-columns:1fr;
+    }
+
+
+    .material{
+        height:500px;
+    }
+
+
+    .social{
+        padding:110px 0;
+    }
+
+
+    .social-head{
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:30px;
+    }
+
+
+    .faq{
+        padding:110px 0;
+    }
+
+
+    .cta{
+        min-height:80vh;
+    }
+
+
+    .cta-bottom{
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:30px;
+    }
+
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+
+    .footer-bottom{
+        flex-direction:column;
+
+        gap:15px;
+    }
+
+
+    .modal-content{
+        padding:35px;
+    }
+
+
+    .modal-content h2{
+        font-size:45px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+
+<header class="header">
+
+<div class="container header-inner">
+
+    <a href="#" class="logo">
+        RUDER
+    </a>
+
+
+    <div class="header-center">
+        Swimwear / Lingerie / Body
+    </div>
+
+
+    <div class="header-right">
+
+        <a
+        class="header-link"
+        href="#catalog">
+            Каталог
+        </a>
+
+        <a
+        class="header-link"
+        href="#custom">
+            Пошив
+        </a>
+
+        <button
+        class="cart-button"
+        id="openCart">
+
+            Корзина
+
+            <span
+            class="cart-count"
+            id="cartCount">
+                0
+            </span>
+
+        </button>
+
+    </div>
+
+</div>
+
+</header>
+
+
+<div class="top-message">
+    Индивидуальный пошив · доставка по всему миру · все оплаты только через официальный сайт
+</div>
+
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+
+<section class="hero">
+
+    <div class="hero-copy">
+
+        <div class="container" style="width:86%;margin-right:0;">
+
+            <div class="eyebrow">
+                RUDER / 2026
+            </div>
+
+
+            <h1 class="hero-title">
+
+                Выгляди
+                <span>
+                    как <em>модель.</em>
+                </span>
+
+            </h1>
+
+        </div>
+
+
+        <div
+        class="container"
+        style="width:86%;margin-right:0;">
+
+            <div class="hero-bottom">
+
+                <p class="hero-description">
+
+                    Мы шьём не только для моделей.
+                    Просто каждая девушка в RUDER
+                    выглядит как модель.
+
+                </p>
+
+
+                <a
+                href="#catalog"
+                class="hero-link">
+
+                    <span class="circle-arrow">
+                        ↓
+                    </span>
+
+                    Смотреть каталог
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-photo">
+
+        <!-- DEMO IMAGE:
+             заменить на реальную фотографию RUDER -->
+
+        <img
+        src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1800&q=90"
+        alt="RUDER">
+
+        <div class="hero-side-label">
+            RUDER / CUSTOM MADE
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ============================================================
+     TICKER
+     ============================================================ -->
+
+<div class="ticker">
+
+<div class="ticker-track">
+
+    RUDER · WOW EFFECT · CUSTOM MADE · SWIMWEAR · LINGERIE · BODY · TUNICS · RUDER · WOW EFFECT · CUSTOM MADE · SWIMWEAR · LINGERIE · BODY · TUNICS ·
+
+</div>
+
+</div>
+
+
+
+<!-- ============================================================
+     STATEMENT
+     ============================================================ -->
+
+<section class="statement">
+
+<div class="container statement-grid">
+
+    <div class="statement-label">
+        01 / RUDER
+    </div>
+
+
+    <div class="statement-text">
+       
+        Надень RUDER —
+        и посмотри на себя
+        по-новому.
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================================================
+     FEATURES
+     ============================================================ -->
+
+<section class="features">
+
+<div class="container feature-grid">
+
+
+    <div class="feature">
+
+        <div class="feature-number">
+            01
+        </div>
+
+        <h3>
+            Wow-effect
+        </h3>
+
+        <p>
+            Фирменная эстетика RUDER,
+            акцент на фигуре и модели,
+            которые заметны.
+        </p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-number">
+            02
+        </div>
+
+        <h3>
+            По твоим меркам
+        </h3>
+
+        <p>
+            Перед пошивом менеджер
+            связывается с клиенткой,
+            уточняет параметры и детали.
+        </p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-number">
+            03
+        </div>
+
+        <h3>
+            Твоя версия
+        </h3>
+
+        <p>
+            Цвет, ткань, кант, чашки,
+            варианты плавок и дополнительные
+            опции обсуждаются при заказе.
+        </p>
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ============================================================
+     CATALOG
+     ============================================================ -->
+
+<section
+class="catalog"
+id="catalog">
+
+<div class="container">
+
+    <div class="catalog-head">
+
+        <h2 class="catalog-title">
+            Shop RUDER
+        </h2>
+
+        <div class="catalog-meta">
+            2026 / selected collection
+        </div>
+
+    </div>
+
+
+    <div class="filters">
+
+        <button
+        class="filter active"
+        data-category="all">
+            Всё
+        </button>
+
+        <button
+        class="filter"
+        data-category="swim">
+            Купальники
+        </button>
+
+        <button
+        class="filter"
+        data-category="body">
+            Комбинезоны
+        </button>
+
+        <button
+        class="filter"
+        data-category="lingerie">
+            Бельё
+        </button>
+
+        <button
+        class="filter"
+        data-category="tunic">
+            Туники
+        </button>
+
+        <button
+        class="filter"
+        data-category="dress">
+            Платья
+        </button>
+
+    </div>
+
+
+    <div
+    class="product-grid"
+    id="productGrid">
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================================================
+     TRANSFORMATION
+     ============================================================ -->
+
+<section class="transformation">
+
+<div class="container transformation-grid">
+
+    <div class="transformation-photo">
+
+        <img
+        src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1500&q=90"
+        alt="RUDER">
+
+    </div>
+
+
+    <div class="transformation-copy">
+
+        <div class="eyebrow">
+            02 / FIT
+        </div>
+
+
+        <h2>
+            Мы не
+            прячем
+            фигуру.
+        </h2>
+
+
+        <p>
+            Мы расставляем акценты.
+
+            Высокая линия бедра,
+            корсетные элементы,
+            регулировки, сетка,
+            косточки и конструкция
+            работают вместе с фигурой.
+        </p>
+
+
+        <div class="transformation-list">
+
+            <div class="transformation-item">
+                <span>
+                    Высокая линия бедра
+                </span>
+
+                <span>
+                    RUDER
+                </span>
+            </div>
+
+
+            <div class="transformation-item">
+                <span>
+                    Корсетная стяжка
+                </span>
+
+                <span>
+                    selected models
+                </span>
+            </div>
+
+
+            <div class="transformation-item">
+                <span>
+                    Регулировки
+                </span>
+
+                <span>
+                    selected models
+                </span>
+            </div>
+
+
+            <div class="transformation-item">
+                <span>
+                    Индивидуальная посадка
+                </span>
+
+                <span>
+                    custom
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================================================
+     CUSTOM
+     ============================================================ -->
+
+<section
+class="custom"
+id="custom">
+
+<div class="container">
+
+    <div class="custom-head">
+
+        <div>
+
+            <div class="eyebrow">
+                03 / CUSTOM
+            </div>
+
+            <h2 class="custom-title">
+                Твоя<br>
+                RUDER.
+            </h2>
+
+        </div>
+
+
+        <div class="custom-copy">
+
+            <p>
+                Не нашла нужный цвет?
+                Хочешь другую посадку?
+                Нужен конкретный вариант плавок
+                или дополнительные детали?
+            </p>
+
+
+            <small>
+
+                В заказе можно оставить комментарии
+                по цвету, виду плавок, срочности и
+                другим пожеланиям. Менеджер уточнит,
+                предусматривает ли выбранная модель
+                нужную опцию.
+
+            </small>
+
+
+            <a
+            href="https://taplink.cc/rudershop_/m/d4edf/"
+            class="custom-button">
+
+                Перейти к заказу
+
+                →
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="custom-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1800&q=90"
+        alt="RUDER custom">
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================================================
+     MATERIALS
+     ============================================================ -->
+
+<section class="materials">
+
+<div class="container">
+
+    <div class="material-head">
+
+        <div>
+
+            <div class="eyebrow">
+                04 / MATERIALS
+            </div>
+
+            <h2 class="material-title">
+                Цвет —<br>
+                тоже характер.
+            </h2>
+
+        </div>
+
+        <div class="catalog-meta">
+            выбрать можно при заказе
+        </div>
+
+    </div>
+
+
+    <div class="material-grid">
+
+
+        <div class="material">
+
+            <img
+            src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1000&q=85"
+            alt="Black">
+
+            <div class="material-overlay">
+
+                <div class="material-name">
+                    BLACK
+                </div>
+
+                <div class="material-text">
+                    classic / sharp / RUDER
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="material">
+
+            <img
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85"
+            alt="Nude">
+
+            <div class="material-overlay">
+
+                <div class="material-name">
+                    NUDE
+                </div>
+
+                <div class="material-text">
+                    soft / invisible / skin
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="material">
+
+            <img
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=85"
+            alt="Red">
+
+            <div class="material-overlay">
+
+                <div class="material-name">
+                    RED
+                </div>
+
+                <div class="material-text">
+                    bold / hot / visible
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="material">
+
+            <img
+            src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=85"
+            alt="White">
+
+            <div class="material-overlay">
+
+                <div class="material-name">
+                    WHITE
+                </div>
+
+                <div class="material-text">
+                    clean / bright / contrast
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================================================
+     SOCIAL PROOF
+     ============================================================ -->
+
+<section class="social">
+
+<div class="container">
+
+    <div class="social-head">
+
+        <h2 class="social-title">
+            RUDER girls.
+        </h2>
+
+
+        <p class="social-sub">
+
+            По материалам самого бренда,
+            RUDER получает большое количество
+            пользовательских фото и отзывов.
+            Главная тема — не просто купальник,
+            а ощущение уверенности в себе.
+
+        </p>
+
+    </div>
+
+
+    <div class="review-grid">
+
+
+        <div class="review">
+
+            <div class="review-top">
+                RUDER / CLIENT
+            </div>
+
+            <div class="review-text">
+                «Осуществили все пожелания
+                в реальность».
+            </div>
+
+            <div class="review-bottom">
+                отзыв клиентки
+            </div>
+
+        </div>
+
+
+        <div class="review">
+
+            <div class="review-top">
+                RUDER / CLIENT
+            </div>
+
+            <div class="review-text">
+                «Не просто магазин.
+                Здесь действительно
+                занимаются пошивом».
+            </div>
+
+            <div class="review-bottom">
+                отзыв клиентки
+            </div>
+
+        </div>
+
+
+        <div class="review">
+
+            <div class="review-top">
+                RUDER / PHILOSOPHY
+            </div>
+
+            <div class="review-text">
+                «Мы шьём не только
+                для моделей».
+            </div>
+
+            <div class="review-bottom">
+                RUDER
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+
+<section class="faq">
+
+<div class="container faq-grid">
+
+    <div>
+
+        <div class="eyebrow">
+            05 / FAQ
+        </div>
+
+        <h2 class="faq-title">
+            Всё,
+            что нужно
+            знать.
+        </h2>
+
+    </div>
+
+
+    <div class="faq-list">
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Это действительно индивидуальный пошив?
+
+                <span class="faq-plus">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                RUDER шьёт изделия по стандартному
+                утверждённому лекалу с учётом
+                индивидуальных параметров фигуры.
+                Перед пошивом менеджер связывается
+                с клиенткой и уточняет данные.
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Можно ли выбрать цвет?
+
+                <span class="faq-plus">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                Для моделей доступны разные ткани
+                и цвета. Конкретная возможность
+                зависит от выбранного изделия.
+                Пожелание можно оставить в примечании
+                к заказу.
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Сколько занимает пошив?
+
+                <span class="faq-plus">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                В карточках RUDER указывается
+                стандартный срок около трёх недель.
+                Для некоторых изделий доступен
+                экспресс-пошив до 7 рабочих дней
+                за дополнительную плату.
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Можно ли заказать без готовых мерок?
+
+                <span class="faq-plus">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                Да. В каталоге предусмотрено
+                оформление заказа без предварительно
+                снятых мерок с последующим заполнением
+                необходимых параметров.
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Есть ли дополнительные опции?
+
+                <span class="faq-plus">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                Да. В зависимости от модели доступны
+                дополнительные чашки, экспресс-пошив,
+                подвязки и другие опции.
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Куда оплачивать заказ?
+
+                <span class="faq-plus">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                RUDER отдельно предупреждает о мошенниках:
+                оплату следует проводить только через
+                официальный сайт бренда. Не переводите
+                деньги неизвестным менеджерам по QR-коду
+                или на карту.
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================================================
+     CTA
+     ============================================================ -->
+
+<section class="cta">
+
+<div class="container">
+
+    <div class="eyebrow" style="color:#ddd;">
+        RUDER / LAST LOOK
+    </div>
+
+
+    <h2>
+        Зацени<br>
+        красоту.
+    </h2>
+
+
+    <div class="cta-bottom">
+
+        <p class="cta-text">
+
+            Выбирай готовую модель,
+            меняй детали или создавай
+            свою версию.
+
+            RUDER доставляет заказы
+            по всему миру.
+
+        </p>
+
+
+        <a
+        href="https://taplink.cc/rudershop_/m/d4edf/"
+        class="cta-button">
+
+            Перейти в официальный магазин
+            →
+
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+
+<footer class="footer">
+
+<div class="container">
+
+    <div class="footer-grid">
+
+
+        <div class="footer-logo">
+            RUDER
+        </div>
+
+
+        <div class="footer-column">
+
+            <strong>
+                SHOP
+            </strong>
+
+            <a href="#catalog">
+                Все товары
+            </a>
+
+            <a href="#catalog">
+                Купальники
+            </a>
+
+            <a href="#catalog">
+                Комбинезоны
+            </a>
+
+            <a href="#catalog">
+                Бельё
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <strong>
+                RUDER
+            </strong>
+
+            <a href="#custom">
+                Индивидуальный пошив
+            </a>
+
+            <a href="#faq">
+                FAQ
+            </a>
+
+            <a href="#catalog">
+                Каталог
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <strong>
+                CONTACT
+            </strong>
+
+            <a
+            href="https://t.me/rudershop">
+                Telegram
+            </a>
+
+            <a
+            href="https://t.me/RUDERSHOP_chat">
+                Telegram менеджер
+            </a>
+
+            <a
+            href="https://wa.me/79957822857">
+                WhatsApp
+            </a>
+
+            <a
+            href="https://vk.com/rudershop">
+                VK
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © RUDER 2026
+        </span>
+
+        <span>
+            SWIMWEAR · LINGERIE · BODY · TUNICS
+        </span>
+
+    </div>
+
+</div>
+
+</footer>
+
+
+
+<!-- ============================================================
+     CART DRAWER
+     ============================================================ -->
+
+<div
+class="drawer-overlay"
+id="drawerOverlay">
+</div>
+
+
+<aside
+class="cart-drawer"
+id="cartDrawer">
+
+
+    <div class="drawer-head">
+
+        <h2 class="drawer-title">
+            Корзина
+        </h2>
+
+        <button
+        class="close"
+        id="closeCart">
+            ×
+        </button>
+
+    </div>
+
+
+    <div
+    class="cart-items"
+    id="cartItems">
+
+        <div class="cart-empty">
+
+            Здесь пока ничего нет.
+
+            <br><br>
+
+            Выбери изделие из каталога.
+
+        </div>
+
+    </div>
+
+
+    <div class="drawer-bottom">
+
+        <div class="total">
+
+            <span>
+                Итого
+            </span>
+
+            <strong id="cartTotal">
+                0 ₽
+            </strong>
+
+        </div>
+
+
+        <a
+        href="https://taplink.cc/rudershop_/m/d4edf/"
+        class="checkout">
+
+            Перейти к оформлению
+
+        </a>
+
+    </div>
+
+</aside>
+
+
+
+<!-- ============================================================
+     PRODUCT MODAL
+     ============================================================ -->
+
+<div
+class="modal-overlay"
+id="productModal">
+
+
+    <div class="product-modal">
+
+
+        <div
+        class="modal-image"
+        id="modalImage">
+        </div>
+
+
+        <div class="modal-content">
+
+
+            <button
+            class="modal-close"
+            id="modalClose">
+                ×
+            </button>
+
+
+            <div
+            class="modal-category"
+            id="modalCategory">
+                RUDER
+            </div>
+
+
+            <h2
+            id="modalName">
+                RUDER
+            </h2>
+
+
+            <div
+            class="modal-price"
+            id="modalPrice">
+                0 ₽
+            </div>
+
+
+            <div
+            class="modal-text"
+            id="modalText">
+
+                Индивидуальный пошив.
+                После оформления заказа
+                менеджер уточнит необходимые
+                параметры и пожелания.
+
+            </div>
+
+
+            <div class="modal-options">
+
+                <div class="option-title">
+                    Цвет
+                </div>
+
+
+                <div class="color-list">
+
+                    <button class="color black"></button>
+
+                    <button class="color nude"></button>
+
+                    <button class="color white"></button>
+
+                    <button class="color red"></button>
+
+                    <button class="color pink"></button>
+
+                </div>
+
+            </div>
+
+
+            <button
+            class="modal-add"
+            id="modalAdd">
+
+                Добавить в корзину
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+/* ============================================================
+   RUDER PRODUCT DATABASE
+   ============================================================
+
+   ЦЕНЫ:
+   взяты из актуально индексируемых страниц RUDER/Taplink.
+
+   ВАЖНО:
+   фотографии ниже — editorial placeholders.
+   Заменить их можно только в этом массиве,
+   не трогая остальной сайт.
+   ============================================================ */
+
+
+const products = [
+
+    {
+        id:1,
+        name:"ЭМРАТА",
+        category:"swim",
+        type:"Купальник",
+        price:14900,
+        oldPrice:20000,
+        badge:"ХИТ",
+        description:"Трусики в комплекте, бразильяно. Длинные вытачные завязки.",
+        image:"https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:2,
+        name:"КИТАНА 2",
+        category:"body",
+        type:"Комбинезон",
+        price:32900,
+        oldPrice:42000,
+        badge:"RUDER ICON",
+        description:"Леггинсы + несъёмные рукава. Black рубчик, канты Metallica.",
+        image:"https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:3,
+        name:"ГЛАМУР",
+        category:"swim",
+        type:"Купальник",
+        price:33900,
+        oldPrice:37000,
+        badge:"WOW",
+        description:"Цвет основы ruspberry гладкий, завязки black гладкий.",
+        image:"https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:4,
+        name:"АРИЗОНА 3",
+        category:"swim",
+        type:"Купальник",
+        price:17900,
+        oldPrice:31000,
+        badge:"SALE",
+        description:"На костях, плавки Венеция. Основа Metallica.",
+        image:"https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:5,
+        name:"БЛЭК ПРОДЖЕКТ",
+        category:"swim",
+        type:"Купальник",
+        price:19900,
+        oldPrice:23000,
+        badge:"",
+        description:"Лиф black гладкий, сеточка nude, кости black. Низ SJ.",
+        image:"https://images.unsplash.com/photo-1604077350837-c7f82f28653f?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:6,
+        name:"АМАЗОНКА",
+        category:"swim",
+        type:"Купальник",
+        price:24900,
+        oldPrice:31000,
+        badge:"",
+        description:"LEO бифлекс, канты и сетка tattoo.",
+        image:"https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:7,
+        name:"МЭТЧ",
+        category:"swim",
+        type:"Купальник",
+        price:24900,
+        oldPrice:29900,
+        badge:"",
+        description:"White гладкий + сеточка nude.",
+        image:"https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:8,
+        name:"ЛУЧЕЗАРНАЯ",
+        category:"swim",
+        type:"Купальник",
+        price:24900,
+        oldPrice:29900,
+        badge:"",
+        description:"Sunny рубчик, нюдовая сеточка между полосками на груди.",
+        image:"https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:9,
+        name:"БЛЭКВУД МАКСИ",
+        category:"tunic",
+        type:"Комплект / туника",
+        price:28900,
+        oldPrice:null,
+        badge:"",
+        description:"Купальник + туника длиной макси.",
+        image:"https://images.unsplash.com/photo-1583846783214-7229a91b20ed?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:10,
+        name:"ТРИО БЛЭКВУД",
+        category:"tunic",
+        type:"Комплект",
+        price:48800,
+        oldPrice:60000,
+        badge:"MAXI",
+        description:"Комплект БЛЭКВУД МАКСИ + туника ФЛАЙ.",
+        image:"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:11,
+        name:"ДРИМ",
+        category:"tunic",
+        type:"Туника",
+        price:17900,
+        oldPrice:25000,
+        badge:"",
+        description:"Сеточка CACAO.",
+        image:"https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:12,
+        name:"КЛЕОПАТРА",
+        category:"tunic",
+        type:"Туника",
+        price:16900,
+        oldPrice:24900,
+        badge:"",
+        description:"Сеточка black, длинные рукава.",
+        image:"https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:13,
+        name:"ЯМИ",
+        category:"tunic",
+        type:"Кимоно",
+        price:19900,
+        oldPrice:25900,
+        badge:"",
+        description:"Сеточка nude, вставки из бифлекса pink.",
+        image:"https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:14,
+        name:"ЭМРАТА СЕЗОН 7",
+        category:"lingerie",
+        type:"Бельё",
+        price:14900,
+        oldPrice:21000,
+        badge:"SALE",
+        description:"Сеточка NUDE в два слоя, трусики в комплекте.",
+        image:"https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:15,
+        name:"РОРШАХ",
+        category:"lingerie",
+        type:"Бельё",
+        price:14900,
+        oldPrice:21000,
+        badge:"",
+        description:"Сеточка NUDE, чокер и канты BLACK.",
+        image:"https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:16,
+        name:"КЕНДИ",
+        category:"lingerie",
+        type:"Бельё",
+        price:13900,
+        oldPrice:21000,
+        badge:"",
+        description:"Чёрная французская сетка SWEET.",
+        image:"https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:17,
+        name:"КРАШ",
+        category:"lingerie",
+        type:"Бельё",
+        price:13900,
+        oldPrice:20000,
+        badge:"",
+        description:"Combo с сеткой cacao + трусики KINI.",
+        image:"https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:18,
+        name:"СВИТ",
+        category:"lingerie",
+        type:"Бельё",
+        price:13900,
+        oldPrice:22000,
+        badge:"",
+        description:"Белое французское кружево SWEET.",
+        image:"https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:19,
+        name:"ЛАВЛИ",
+        category:"lingerie",
+        type:"Бельё",
+        price:13900,
+        oldPrice:19000,
+        badge:"",
+        description:"Сеточка SWEET white, стринги, канты и пояс.",
+        image:"https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:20,
+        name:"БЕЙБ",
+        category:"lingerie",
+        type:"Бельё",
+        price:11900,
+        oldPrice:19000,
+        badge:"BEST PRICE",
+        description:"Сетка cacao, кант caramel, регулируемые трусики.",
+        image:"https://images.unsplash.com/photo-1583846783214-7229a91b20ed?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:21,
+        name:"ЭКС.ПЛО",
+        category:"body",
+        type:"Комбинезон",
+        price:null,
+        oldPrice:null,
+        badge:"NEW",
+        description:"Комбинезон. Актуальная цена уточняется в каталоге.",
+        image:"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:22,
+        name:"МАНУЭЛА",
+        category:"body",
+        type:"Комбинезон",
+        price:25900,
+        oldPrice:37500,
+        badge:"",
+        description:"Леггинсы, black рубчик, кант Metallica.",
+        image:"https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:23,
+        name:"КИБЕРНАЙТ",
+        category:"swim",
+        type:"Купальник",
+        price:25500,
+        oldPrice:32000,
+        badge:"HIT",
+        description:"На костях, кант BLACK, ластовица CARAMEL.",
+        image:"https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:24,
+        name:"МУЛЬТИПАСПОРТ",
+        category:"swim",
+        type:"Купальник",
+        price:24900,
+        oldPrice:30000,
+        badge:"",
+        description:"White рубчик.",
+        image:"https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:25,
+        name:"БОНД",
+        category:"swim",
+        type:"Купальник",
+        price:24900,
+        oldPrice:30000,
+        badge:"",
+        description:"Black гладкий.",
+        image:"https://images.unsplash.com/photo-1604077350837-c7f82f28653f?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:26,
+        name:"ФЛАЙ",
+        category:"tunic",
+        type:"Туника",
+        price:19900,
+        oldPrice:26000,
+        badge:"",
+        description:"Цвет pudra, узкий рукав 3/4.",
+        image:"https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:27,
+        name:"МАЛЬДИВ",
+        category:"tunic",
+        type:"Туника",
+        price:15900,
+        oldPrice:23000,
+        badge:"",
+        description:"Туника с рюшами, белая сеточка.",
+        image:"https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1000&q=90"
+    },
+
+
+    {
+        id:28,
+        name:"БЛЭКВУД ШТАНИНЫ",
+        category:"tunic",
+        type:"Туника",
+        price:19900,
+        oldPrice:null,
+        badge:"",
+        description:"Туника со штанинами, чёрная сеточка.",
+        image:"https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=90"
+    }
+
+];
+
+
+
+/* ============================================================
+   RENDER PRODUCTS
+   ============================================================ */
+
+const productGrid =
+    document.getElementById("productGrid");
+
+
+function formatPrice(price){
+
+    if(price === null){
+        return "Уточнить";
+    }
+
+    return price
+        .toLocaleString("ru-RU") + " ₽";
+
+}
+
+
+function renderProducts(category = "all"){
+
+    productGrid.innerHTML = "";
+
+
+    const filtered =
+        category === "all"
+        ? products
+        : products.filter(
+            product =>
+                product.category === category
+        );
+
+
+    filtered.forEach((product,index) => {
+
+        const article =
+            document.createElement("article");
+
+
+        article.className =
+            "product";
+
+
+        article.dataset.id =
+            product.id;
+
+
+        article.innerHTML = `
+
+            <div class="product-image">
+
+                <img
+                src="${product.image}"
+                alt="${product.name} RUDER">
+
+                <div class="product-index">
+                    ${String(product.id).padStart(2,"0")}
+                </div>
+
+                ${
+                    product.badge
+                    ?
+                    `<div class="product-badge">
+                        ${product.badge}
+                    </div>`
+                    :
+                    ""
+                }
+
+            </div>
+
+
+            <div class="product-info">
+
+                <div>
+
+                    <div class="product-name">
+                        ${product.name}
+                    </div>
+
+                    <div class="product-description">
+                        ${product.type}
+                    </div>
+
+                </div>
+
+
+                <div class="product-price">
+
+                    ${
+                        product.oldPrice
+                        ?
+                        `<span class="old-price">
+                            ${formatPrice(product.oldPrice)}
+                        </span>`
+                        :
+                        ""
+                    }
+
+                    ${formatPrice(product.price)}
+
+                </div>
+
+            </div>
+
+        `;
+
+
+        article.addEventListener(
+            "click",
+            () => openProduct(product)
+        );
+
+
+        productGrid.appendChild(article);
+
+
+        setTimeout(
+            () => article.classList.add("visible"),
+            40 * index
+        );
+
+    });
+
+}
+
+
+renderProducts();
+
+
+
+/* ============================================================
+   FILTERS
+   ============================================================ */
+
+document
+.querySelectorAll(".filter")
+.forEach(button => {
+
+    button.addEventListener(
+        "click",
+        () => {
+
+            document
+            .querySelectorAll(".filter")
+            .forEach(
+                item =>
+                item.classList.remove("active")
+            );
+
+
+            button.classList.add("active");
+
+
+            renderProducts(
+                button.dataset.category
+            );
+
+        }
+    );
+
+});
+
+
+
+/* ============================================================
+   PRODUCT MODAL
+   ============================================================ */
+
+const productModal =
+    document.getElementById("productModal");
+
+
+const modalImage =
+    document.getElementById("modalImage");
+
+
+const modalCategory =
+    document.getElementById("modalCategory");
+
+
+const modalName =
+    document.getElementById("modalName");
+
+
+const modalPrice =
+    document.getElementById("modalPrice");
+
+
+const modalText =
+    document.getElementById("modalText");
+
+
+const modalAdd =
+    document.getElementById("modalAdd");
+
+
+let currentProduct = null;
+
+
+function openProduct(product){
+
+    currentProduct =
+        product;
+
+
+    modalImage.style.backgroundImage =
+        `url("${product.image}")`;
+
+
+    modalCategory.textContent =
+        product.type;
+
+
+    modalName.textContent =
+        product.name;
+
+
+    modalPrice.innerHTML = `
+
+        ${
+            product.oldPrice
+            ?
+            `<span class="modal-old-price">
+                ${formatPrice(product.oldPrice)}
+            </span>`
+            :
+            ""
+        }
+
+        ${formatPrice(product.price)}
+
+    `;
+
+
+    modalText.textContent =
+        product.description +
+        " После оформления заказа менеджер RUDER уточнит параметры, цвет и дополнительные пожелания.";
+
+
+    productModal.classList.add("open");
+
+    document.body.classList.add("locked");
+
+}
+
+
+function closeProduct(){
+
+    productModal.classList.remove("open");
+
+    document.body.classList.remove("locked");
+
+}
+
+
+document
+.getElementById("modalClose")
+.addEventListener(
+    "click",
+    closeProduct
+);
+
+
+productModal.addEventListener(
+    "click",
+    event => {
+
+        if(event.target === productModal){
+
+            closeProduct();
+
+        }
+
+    }
+);
+
+
+
+/* ============================================================
+   CART
+   ============================================================ */
+
+let cart = [];
+
+
+const cartDrawer =
+    document.getElementById("cartDrawer");
+
+
+const drawerOverlay =
+    document.getElementById("drawerOverlay");
+
+
+const cartItems =
+    document.getElementById("cartItems");
+
+
+const cartCount =
+    document.getElementById("cartCount");
+
+
+const cartTotal =
+    document.getElementById("cartTotal");
+
+
+function openCart(){
+
+    cartDrawer.classList.add("open");
+
+    drawerOverlay.classList.add("open");
+
+    document.body.classList.add("locked");
+
+}
+
+
+function closeCart(){
+
+    cartDrawer.classList.remove("open");
+
+    drawerOverlay.classList.remove("open");
+
+    document.body.classList.remove("locked");
+
+}
+
+
+document
+.getElementById("openCart")
+.addEventListener(
+    "click",
+    openCart
+);
+
+
+document
+.getElementById("closeCart")
+.addEventListener(
+    "click",
+    closeCart
+);
+
+
+drawerOverlay.addEventListener(
+    "click",
+    closeCart
+);
+
+
+
+function addToCart(product){
+
+    cart.push(product);
+
+    renderCart();
+
+    closeProduct();
+
+    openCart();
+
+}
+
+
+modalAdd.addEventListener(
+    "click",
+    () => {
+
+        if(currentProduct){
+
+            addToCart(
+                currentProduct
+            );
+
+        }
+
+    }
+);
+
+
+
+function renderCart(){
+
+    cartCount.textContent =
+        cart.length;
+
+
+    if(cart.length === 0){
+
+        cartItems.innerHTML = `
+
+            <div class="cart-empty">
+
+                Здесь пока ничего нет.
+
+                <br><br>
+
+                Выбери изделие из каталога.
+
+            </div>
+
+        `;
+
+        cartTotal.textContent =
+            "0 ₽";
+
+        return;
+
+    }
+
+
+    cartItems.innerHTML = "";
+
+
+    let total = 0;
+
+
+    cart.forEach(
+        (product,index) => {
+
+            if(product.price){
+                total += product.price;
+            }
+
+
+            const item =
+                document.createElement("div");
+
+
+            item.className =
+                "cart-item";
+
+
+            item.innerHTML = `
+
+                <img
+                src="${product.image}"
+                alt="${product.name}">
+
+
+                <div>
+
+                    <div class="cart-item-name">
+                        ${product.name}
+                    </div>
+
+                    <div class="cart-item-price">
+                        ${formatPrice(product.price)}
+                    </div>
+
+                </div>
+
+
+                <button
+                class="remove-item"
+                data-index="${index}">
+                    ×
+                </button>
+
+            `;
+
+
+            item
+            .querySelector(".remove-item")
+            .addEventListener(
+                "click",
+                () => {
+
+                    cart.splice(index,1);
+
+                    renderCart();
+
+                }
+            );
+
+
+            cartItems.appendChild(item);
+
+        }
+    );
+
+
+    cartTotal.textContent =
+        formatPrice(total);
+
+}
+
+
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+
+document
+.querySelectorAll(".faq-question")
+.forEach(button => {
+
+    button.addEventListener(
+        "click",
+        () => {
+
+            const item =
+                button.parentElement;
+
+
+            const opened =
+                item.classList.contains("open");
+
+
+            document
+            .querySelectorAll(".faq-item")
+            .forEach(
+                other => {
+
+                    other.classList.remove(
+                        "open"
+                    );
+
+                    other.querySelector(
+                        ".faq-plus"
+                    ).textContent = "+";
+
+                }
+            );
+
+
+            if(!opened){
+
+                item.classList.add("open");
+
+                button.querySelector(
+                    ".faq-plus"
+                ).textContent = "−";
+
+            }
+
+        }
+    );
+
+});
+
+
+
+/* ============================================================
+   ESC
+   ============================================================ */
+
+document
+.addEventListener(
+    "keydown",
+    event => {
+
+        if(event.key === "Escape"){
+
+            closeProduct();
+
+            closeCart();
+
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>
+
+
+
+
